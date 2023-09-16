@@ -1,0 +1,16 @@
+version: "3.9" 
+services:
+  mssql:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: azuresql
+    user: root
+    ports:
+      - 1433:1433
+    volumes:
+      - azuresql-volume:/var/opt/mssql
+    environment:
+      MSSQL_SA_PASSWORD: 'key'
+      ACCEPT_EULA: 'Y'
+    restart: always
+volumes:
+  azuresql-volume: {}

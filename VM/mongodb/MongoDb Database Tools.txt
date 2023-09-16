@@ -1,0 +1,6 @@
+mongodump -u root -p example --authenticationDatabase admin -d GeoLocationFingerprintDB -o /dump
+
+mongorestore -u root -p example --authenticationDatabase admin -d GeoLocationFingerprintDB /Yedek/GeoLocationFingerprintDB
+
+
+C:\Program Files\MongoDB\Tools\100
