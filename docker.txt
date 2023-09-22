@@ -1,5 +1,5 @@
 docker exec -it <container_id_or_name> bash
 
 docker ps
-docker cp C:\bak\kanola.bak b79025bbbb92:/container/bak
+docker cp C:\bak\kanola.bak b79025bbbb92:/bak
 
