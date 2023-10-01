@@ -14,3 +14,9 @@ db.createUser(
     roles: [ { role: "readWrite", db: "GeoLocationFingerprintDB" } ]
   }
 )
+db.grantRolesToUser(
+  "root",
+  [
+    { role: "readWrite", db: "GeoLocationFingerprintDB" }
+  ]
+)
