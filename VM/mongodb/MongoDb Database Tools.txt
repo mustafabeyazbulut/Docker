@@ -1,3 +1,7 @@
 mongodump -u root -p example --authenticationDatabase admin -d GeoLocationFingerprintDB -o /dump
 
 mongorestore -u root -p example --authenticationDatabase admin -d GeoLocationFingerprintDB /Yedek/GeoLocationFingerprintDB
+
+
+
+docker exec -it 8e4d45f77513 bash
