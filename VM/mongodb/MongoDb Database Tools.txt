@@ -6,3 +6,11 @@ mongorestore -u root -p example --authenticationDatabase admin -d GeoLocationFin
 
 docker exec -it 8e4d45f77513 bash
 mongosh --host localhost:27017 -u root -p
+use mydb
+db.createUser(
+  {
+    user: "root",
+    pwd: "example",
+    roles: [ { role: "readWrite", db: "mydb" } ]
+  }
+)
