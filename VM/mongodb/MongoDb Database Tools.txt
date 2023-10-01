@@ -11,6 +11,6 @@ db.createUser(
   {
     user: "root",
     pwd: "example",
-    roles: [ { role: "readWrite", db: "mydb" } ]
+    roles: [ { role: "readWrite", db: "GeoLocationFingerprintDB" } ]
   }
 )
