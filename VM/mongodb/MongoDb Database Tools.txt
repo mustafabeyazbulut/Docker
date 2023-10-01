@@ -5,3 +5,4 @@ mongorestore -u root -p example --authenticationDatabase admin -d GeoLocationFin
 
 
 docker exec -it 8e4d45f77513 bash
+mongosh --host 27017:27017 -u root -p
