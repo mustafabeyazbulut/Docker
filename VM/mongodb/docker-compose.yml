@@ -9,6 +9,6 @@ services:
       - mongodb-data:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_PASSWORD: 789+Asdf
 volumes:
   mongodb-data: {}
